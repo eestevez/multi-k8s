@@ -21,7 +21,7 @@ script:
   - docker run eestevezp/react-test npm test -- --coverage
 
 deploy:
-  provider: script
-  script: bash ./deploy.sh
-  on:
-    branch: master
+  - provider: script
+    script: bash ./deploy.sh
+    on:
+      branch: master
